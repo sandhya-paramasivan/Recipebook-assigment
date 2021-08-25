@@ -1,0 +1,136 @@
+{
+	"info": {
+		"_postman_id": "7abe5404-eb6b-4820-8503-d07a7615d42e",
+		"name": "recipebook",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "fetch",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/myrecipes/fetch/13",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"myrecipes",
+						"fetch",
+						"13"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "fetch all",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/recipes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"recipes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \r\n    \"name\": \"Pepper Chicken\",\r\n    \"createdOn\": \"24-08-2021 10:43\",\r\n    \"vegetarian\": false,\r\n    \"noofServings\": 2,\r\n    \"ingredients\": \"pepper,chicken,oil,seasonings\",\r\n    \"cookingInstruction\": \"1.Fry the chicken in pan with oil 2.add pepper and seasonings give a stir fry\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/myrecipes/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"myrecipes",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 13,\r\n    \"name\": \"Pasta\",\r\n    \"createdOn\": \"25-08-2021 07:43\",\r\n    \"vegetarian\": true,\r\n    \"noofServings\": 2,\r\n    \"ingredients\": \"penne pasta,tomato,soy sauce,pepper\",\r\n    \"ingredientsList\": [\r\n        \"penne pasta\",\r\n        \"tomato\",\r\n        \"soy sauce\",\r\n        \"pepper\"\r\n    ],\r\n    \"cookingInstruction\": \"1.Cook the pasta in boiling water 2.Drain the water well 3.Cook the pasta well with other ingredients\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/myrecipes/update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"myrecipes",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 13,\r\n    \"name\": \"Pasta\",\r\n    \"createdOn\": \"25-08-2021 07:43\",\r\n    \"vegetarian\": true,\r\n    \"noofServings\": 2,\r\n    \"ingredients\": \"penne pasta,tomato,soy sauce,pepper\",\r\n    \"ingredientsList\": [\r\n        \"penne pasta\",\r\n        \"tomato\",\r\n        \"soy sauce\",\r\n        \"pepper\"\r\n    ],\r\n    \"cookingInstruction\": \"1.Cook the pasta in boiling water 2.Drain the water well 3.Cook the pasta well with other ingredients\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/myrecipes/update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"myrecipes",
+						"update"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
